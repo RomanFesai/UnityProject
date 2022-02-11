@@ -24,6 +24,7 @@ public class EnemyRagdoll : MonoBehaviour
         GetComponent<Animator>().enabled = false;
         setRigidBodyState(false);
         setColliderState(true);
+        GetComponent<EnemyAi>().enabled = false;
     }
 
     void setRigidBodyState(bool state) {

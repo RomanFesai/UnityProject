@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\GunSystem.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\SawBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Pickupable.cs" />
     <Compile Include="Assets\Scripts\GameBehaviour.cs" />
     <Compile Include="Assets\Scripts\BulletBehaviour.cs" />
     <Compile Include="Assets\Scripts\RayCastView.cs" />
@@ -79,7 +80,7 @@
     <Compile Include="Assets\Scripts\Recoil.cs" />
     <Compile Include="Assets\Scripts\PickUpThrow.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Pickupable.cs" />
+    <Compile Include="Assets\Scripts\EnemyAi.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Nokobot\Modern Guns - Handgun\README.txt" />
@@ -707,6 +708,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{B98FF35B-03EC-4F19-76DE-7FB8BDEF1514}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{D5B9B843-0037-7C72-3754-F9158A61D49D}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

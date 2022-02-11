@@ -6,12 +6,12 @@ public class BulletBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
     public float onscreenDelay = 3f;
-    public float speedUp = 0.1f;
-    public Collider coll;
+    //public float speedUp = 0.1f;
+    //public Collider coll;
     void Start()
     {
-        coll = GetComponent<Collider>();
-        coll.isTrigger = true;
+        /*coll = GetComponent<Collider>();
+        coll.isTrigger = true;*/
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         Destroy(this.gameObject, onscreenDelay);
     }
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if (other.tag == "TakeObject")
         {
@@ -27,5 +27,5 @@ public class BulletBehaviour : MonoBehaviour
             other.attachedRigidbody.AddForce(0, 15, 0);
 
         }
-    }
+    }*/
 }

@@ -447,7 +447,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Disc")
+        if (collision.gameObject.name == "Disc" || collision.gameObject.name == "Bullet(Clone)")
         {
             _gameManager.Lives -= 1;
             FindObjectOfType<AudioManager>().Play("Hurt");
